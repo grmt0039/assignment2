@@ -1,0 +1,267 @@
+body {
+  font-family: Roboto, san-serif;
+}
+p {
+  font-size: 13px;
+  line-height: 18px;
+}
+h1 {
+  font-family: Droid Sans, san-serif;
+  font-size: 28px;
+  margin: 20px 0;
+}
+h1 a {
+  font-size: 28px;
+  color: #000000;
+}
+h2 {
+  font-family: Droid Sans, san-serif;
+  font-size: 22px;
+  margin: 20px 0;
+}
+h3 {
+  font-family: Droid Sans, san-serif;
+  font-size: 18px;
+  color: #2bb293;
+}
+h4 {
+  font-family: Droid Sans, san-serif;
+  font-size: 15px;
+  color: #393939;
+  font-style: italic;
+  padding: 5px 0;
+}
+a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #565656;
+}
+a:hover {
+  opacity: 0.5;
+}
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* HEADER START */
+header {
+  height: 100px;
+  padding-top: 30px;
+  display: inline;
+  float: left;
+  width: 940px;
+  margin: 0 10px;
+  border-bottom: 10px solid #222222;
+}
+header h1 {
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+}
+header nav {
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+  padding-top: 30px;
+}
+header nav ul li {
+  display: inline;
+  margin-right: 40px;
+}
+header nav ul li:last-child {
+  margin-right: 0;
+}
+header nav ul li a {
+  color: #d44072;
+  font-size: 20px;
+}
+header nav ul li a.active {
+  font-weight: bold;
+  color: #b82959;
+}
+/* HEADER END */
+/* HOME START */
+div#home-wrapper {
+  display: inline;
+  float: left;
+  width: 940px;
+  margin: 0 10px;
+}
+div#home-wrapper div#hero {
+  display: inline;
+  float: left;
+  width: 940px;
+  margin: 0 10px;
+}
+div#home-wrapper article#main-column {
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+}
+div#home-wrapper aside.sidebar {
+  display: inline;
+  float: left;
+  width: 220px;
+  margin: 0 10px;
+}
+div#home-wrapper aside.sidebar ul li {
+  padding-bottom: 20px;
+}
+div#home-wrapper aside.sidebar ul li h3 {
+  color: #2bb293;
+}
+/* HOME END*/
+/* ABOUT START */
+section#about-wrapper {
+  display: inline;
+  float: left;
+  width: 940px;
+  margin: 0 10px;
+}
+section#about-wrapper article#about-us {
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+}
+section#about-wrapper div#mascot-face {
+  display: inline;
+  float: left;
+  width: 540px;
+  margin: 0 10px;
+  padding-bottom: 20px;
+}
+section#about-wrapper div#mascot-full {
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+  padding-bottom: 20px;
+}
+section#about-wrapper article#about-mascot {
+  display: inline;
+  float: left;
+  width: 540px;
+  margin: 0 10px;
+}
+/* ABOUT END */
+/* TOURS START */
+div#tour-wrapper {
+  display: inline;
+  float: left;
+  width: 940px;
+  margin: 0 10px;
+}
+div#tour-wrapper section#events-wrapper {
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+}
+div#tour-wrapper section#events-wrapper img {
+  display: inline;
+  float: left;
+  width: 60px;
+  margin: 0 10px;
+}
+div#tour-wrapper section#events-wrapper article {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+}
+div#tour-wrapper section#events-wrapper img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 3px solid #2e9aa3;
+}
+div#tour-wrapper section#events-wrapper h3 {
+  color: #3cbdc8;
+}
+div#tour-wrapper section#events-wrapper h4 {
+  color: #23747b;
+}
+div#tour-wrapper section#events-wrapper .separator {
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+  height: 30px;
+  background: transparent;
+}
+div#tour-wrapper aside.sidebar {
+  display: inline;
+  float: left;
+  width: 220px;
+  margin: 0 10px;
+}
+div#tour-wrapper aside.sidebar ul li {
+  padding-bottom: 20px;
+}
+div#tour-wrapper aside.sidebar ul li h3 {
+  color: #d5d5d5;
+}
+/* TOURS END */
+/* FOOTER START */
+footer {
+  display: inline;
+  float: left;
+  width: 940px;
+  margin: 0 10px;
+  padding: 20px 0;
+  border-top: 10px solid #222222;
+}
+footer p {
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+  padding-top: 45px;
+}
+footer ul#media-list {
+  display: inline;
+  float: left;
+  width: 220px;
+  margin: 0 10px;
+}
+footer ul#media-list li {
+  display: inline;
+  margin-right: 15px;
+}
+footer ul#media-list li:last-child {
+  margin-right: 0;
+}
+footer ul#media-list li a {
+  color: #d44072;
+  font-size: 20px;
+}
+footer ul#media-list li a img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* FOOTER END */

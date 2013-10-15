@@ -5,27 +5,51 @@ body {
 }
 
 p {
-  
+  font-size: @basefontsize * 1.3;
+  line-height: @baselineheight * 1.8;
 }
 
 h1 {
   font-family: @headingfontfamily;
-  font-size: @basefontsize * 2; // Insert number that will resize accordingly based on stylesheet. 
+  font-size: @basefontsize * 2.8; // Insert number that will resize accordingly based on stylesheet. 
+
+  margin: 20px 0;
+
+  a {
+    font-size: @basefontsize * 2.8;
+    color: @basefontcolor;
+  }
 }
 
 h2 {
   font-family: @headingfontfamily;
-  font-size: @basefontsize * 2; // Insert number that will resize accordingly based on stylesheet. 
+  font-size: @basefontsize * 2.2; // Insert number that will resize accordingly based on stylesheet. 
+
+  margin: 20px 0;
 }
 
 h3 {
   font-family: @headingfontfamily;
-  font-size: @basefontsize * 2; // Insert number that will resize accordingly based on stylesheet. 
+  font-size: @basefontsize * 1.8; // Insert number that will resize accordingly based on stylesheet. 
+  color: @color-aside-header;
+}
+
+h4 {
+  font-family: @headingfontfamily;
+  font-size: @basefontsize * 1.5; 
+  color: @dark-grey;
+  font-style: italic;
+  padding: 5px 0;
 }
 
 a {
   //insert styling
+  text-decoration: none;
+  font-size: @basefontsize * 1.3;
+  color: darken(@light-grey, 20%);
+  
   &:hover {
     //insert styling
+    opacity: 0.5;
   }
 }

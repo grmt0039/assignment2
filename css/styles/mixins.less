@@ -13,3 +13,66 @@
   -moz-border-radius:    @radius;
   border-radius:         @radius;
 }
+
+// Mixin for horizontal lists
+.list-horizontal(@right-m: 40px, @font-colour: @color-nav) {
+	
+	display: inline;
+  	margin-right: @right-m;
+
+  	&:last-child {
+  		margin-right: 0;
+  	}
+
+  	a {
+  		color: @font-colour;
+  		font-size: @basefontsize * 2;
+  	}
+  	
+}
+
+//Mixin for active nav item
+.nav-active() {
+	font-weight: bold;
+  	color: darken(@color-nav, 10%);
+}
+
+//Mixin for aside sidebar
+.aside-header(@font-color: @color-aside-header) {
+	ul {
+	  	li {
+	  		padding-bottom: 20px;
+
+	  		h3 {
+	  			color: @font-color;
+	  		}
+	  	}
+	  
+	}
+}
+
+//Mixin for tour events
+.bordered-date() {
+	img {
+		//mixin for border radius used
+		.border-radius();
+		border: 3px solid darken(@color-calendar, 10%);
+	}
+
+	h3 {
+		color: @color-calendar;
+	}
+
+	h4 {
+		color: darken(@color-calendar, 20%);
+	}
+
+	
+}
+
+//Mixin for clear fix separators
+.clear-fix (@grid-num, @div-height, @div-colour: transparent) {
+	.column(@grid-num);
+	height: @div-height;
+	background: @div-colour;
+}

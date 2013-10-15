@@ -1,6 +1,12 @@
 @import 'styles/brand.less';
 @import 'styles/typography.less';
 @import 'styles/grid.less';
+@import 'styles/mixins.less';
+
+//Ensures all elements remain width, despite padding or borders being applied
+*, *:after, *:before {
+	.box-sizing();
+}
 
 .container {
   width: 960px;
@@ -8,14 +14,154 @@
   overflow: hidden;
 }
 
+
+/* HEADER START */
 header {
+  height: 100px;
+  padding-top: 30px;
   .column(12);
-}
+  border-bottom: 10px solid @color-hf-borders;
+  
+  h1 {
+  	.column(4);
+  }
 
-article#maincolumn {
-  .column(8);
-}
+  nav {
+  	.column(4);
+  	padding-top: 30px;
 
-sidebar#sidebar {
-  .column(4);
+  	ul {
+  		li {
+  			//mixin for list used
+  			.list-horizontal();
+
+  			a.active {
+  				//mixin for active nav item
+  				.nav-active()
+  			}
+  		}
+  	}
+  }
 }
+/* HEADER END */
+
+
+
+/* HOME START */
+div#home-wrapper {
+	.column(12);
+	
+	div#hero {
+		.column(12);
+	}
+
+	article#main-column {
+		.column(8);
+	}
+
+	aside.sidebar {
+	  .column(3);
+	  
+	  //mixin for aside used
+	  .aside-header();
+	}
+}
+/* HOME END*/
+
+
+
+/* ABOUT START */
+section#about-wrapper {
+
+	.column(12);
+	
+	article#about-us {
+		.column(4);
+	}
+
+	div#mascot-face {
+		.column(7);
+		padding-bottom: 20px;
+	}
+
+	div#mascot-full {
+		.column(4);
+		padding-bottom: 20px;
+	}
+
+	article#about-mascot {
+		.column(7);
+	}
+}
+/* ABOUT END */
+
+
+
+/* TOURS START */
+div#tour-wrapper {
+	.column(12);
+
+	section#events-wrapper {
+		.column(8);
+
+		img {
+			.column(1);
+		}
+
+		article {
+			.column(6);
+		}
+
+		//mixin for tour events used
+		.bordered-date();
+
+		//mixin for separators used
+		.separator {
+			.clear-fix(8,30px);
+		}
+	}
+
+	aside.sidebar {
+	  .column(3);
+	  
+	  //mixin for aside used
+	  .aside-header(lighten(@light-grey,30%));
+	}
+}
+/* TOURS END */
+
+
+
+/* FOOTER START */
+footer {
+	.column(12);
+	padding: 20px 0;
+	border-top: 10px solid @color-hf-borders;
+
+	p {
+		.column(8);
+		padding-top: 45px;
+	}
+
+	ul#media-list {
+		.column(3);
+
+		li {
+			//mixin for list used
+			.list-horizontal(15px);
+
+			a {
+				img {
+					//mixin for border radius used
+					.border-radius(10px);
+				}
+			}
+		}
+	}
+}
+/* FOOTER END */
+
+
+
+
+
